@@ -9,7 +9,7 @@
 {{-- Content --}}
 @section('content')
 <div class="API">
-	<h1>Sponzorme API</h1>
+	<h1>Geeky API</h1>
 	<pre>
 		<table class="table">
 			<tr><th>Url: </th><td>api/v1</td></tr>

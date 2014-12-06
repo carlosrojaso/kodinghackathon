@@ -26,8 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
     'local' => array('localhost','127.0.0.1','Casa','Sebastian'),
-    'staging' => array('staging.sponzor.me','staging.*'),
-    'production'=>array('beta.sponzor.me','base.*')
+    'production'=>array('http://uckkb96a31f8.carlosrojaso.koding.io:8080/','http://uckkb96a31f8.carlosrojaso.koding.io:8080/.*')
 ));
 
 /*

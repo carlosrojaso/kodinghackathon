@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'beta',
-			'username'  => 'beta',
-			'password'  => '7VMrjqCfUB749w',
+			'database'  => 'storytelling',
+			'username'  => 'storytelling',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => 'web_',
