@@ -1,4 +1,4 @@
-<?php echo "Estoy en producción";
+<?php
 return array(
 
 	/*

@@ -1,4 +1,4 @@
-<?php echo "Estoy en local";
+<?php
 return array(
 
 	/*
