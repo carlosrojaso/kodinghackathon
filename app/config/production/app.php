@@ -1,4 +1,4 @@
-<?php echo "Estoy en local";
+<?php echo "Estoy en producción";
 return array(
 
 	/*
@@ -25,7 +25,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost/sponzorme',
+	'url' => 'http://uckkb96a31f8.carlosrojaso.koding.io:8080',
 
 	/*
 	|--------------------------------------------------------------------------
