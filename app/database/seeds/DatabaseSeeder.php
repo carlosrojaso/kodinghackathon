@@ -10,8 +10,15 @@ class DatabaseSeeder extends Seeder {
 	public function run()
 	{
 		Eloquent::unguard();
-
-		// $this->call('UserTableSeeder');
+		DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+		$this->call('SentryGroupSeeder');
+		$this->call('SentryUserSeeder');
+		$this->call('SentryUserGroupSeeder');		
+		$this->call('RelUsersCategoryTableSeeder');
+		$this->call('RelUsersInterestsTableSeeder');
+		$this->call('CategoriesTableSeeder');
+		$this->call('InterestsCategoriesTableSeeder');
+		DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 	}
 
 }

@@ -1,8 +1,6 @@
-/bootstrap/compiled.php
-/vendor
-composer.phar
+assets/*
+uploads/*
 composer.lock
-.env.*.php
-.env.php
-.DS_Store
-Thumbs.db
+protected/config/main.php
+.requirements.txt
+.htaccess

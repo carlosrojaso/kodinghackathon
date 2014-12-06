@@ -17,6 +17,7 @@ ClassLoader::addDirectories(array(
 	app_path().'/controllers',
 	app_path().'/models',
 	app_path().'/database/seeds',
+	app_path().'/libraries'
 
 ));
 
@@ -53,22 +54,6 @@ App::error(function(Exception $exception, $code)
 
 /*
 |--------------------------------------------------------------------------
-| Maintenance Mode Handler
-|--------------------------------------------------------------------------
-|
-| The "down" Artisan command gives you the ability to put an application
-| into maintenance mode. Here, you will define what is displayed back
-| to the user if maintenance mode is in effect for the application.
-|
-*/
-
-App::down(function()
-{
-	return Response::make("Be right back!", 503);
-});
-
-/*
-|--------------------------------------------------------------------------
 | Require The Filters File
 |--------------------------------------------------------------------------
 |
@@ -78,4 +63,14 @@ App::down(function()
 |
 */
 
-require app_path().'/filters.php';
+require __DIR__.'/../filters.php';
+
+// Require the Observables file.
+require __DIR__.'/../observables.php';
+
+/*
+|--------------------------------------------------------------------------
+| Prep Sentry for dependency Injection
+|--------------------------------------------------------------------------
+*/
+$app['Cartalyst\Sentry\Sentry'] = $app['sentry'];

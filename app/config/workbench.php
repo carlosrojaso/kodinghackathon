@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'name' => '',
+	'name' => 'Sebastian Gomez',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -22,10 +22,10 @@ return array(
 	|
 	| Like the option above, your e-mail address is used when generating new
 	| workbench packages. The e-mail is placed in your composer.json file
-	| automatically after the package is created by the workbench tool.
+	| automatically whwen the package is created by the workbench tool.
 	|
 	*/
 
-	'email' => '',
+	'email' => 'seagomezar@gmail.com',
 
 );
